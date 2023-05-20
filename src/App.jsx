@@ -2,10 +2,9 @@ import Card from './Card'
 
 function App() {
   return (
-    <>
-      <h2 className='text-5xl text-red-600'>hey</h2>
+    <div className='flex justify-center items-center h-screen m-auto'>
       <Card></Card>
-    </>
+    </div>
   )
 }
 

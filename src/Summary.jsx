@@ -1,8 +1,9 @@
-import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import PropTypes from 'prop-types'
 
-function Summary({ setScore }) {
+function Summary(props) {
+  const { setScore } = props
   const [data, setData] = useState([])
   const getData = () => {
     axios.get('data.json').then(res => {
